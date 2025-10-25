@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- IMPORTANT: In Vite, the favicon should still be placed in the 'public' folder. -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Fitting Room Prototype</title>
+    
+    <!-- Load Tailwind CSS CDN for simplicity in this prototyping environment -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Configure Tailwind to use the Inter font
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    
+
+</head>
+<body class="bg-gray-50">
+    <div id="root"></div>
+    
+    <!-- The main application entry point for Vite -->
+    <script type="module" src="/src/index.jsx"></script>
+</body>
+</html>
